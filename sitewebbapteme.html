@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baptême de Margot</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(180deg, #7fa3a6 0%, #6f9497 100%);
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 24px;
+      text-align: center;
+    }
+    .header-image {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      margin-bottom: 28px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    }
+    h1 {
+      font-weight: normal;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-weight: normal;
+      margin-top: 0;
+    }
+    .card {
+      background: rgba(255,255,255,0.18);
+      backdrop-filter: blur(4px);
+      border-radius: 24px;
+      padding: 28px;
+      margin: 28px 0;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+    p {
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    label {
+      display: block;
+      margin-top: 14px;
+      font-size: 14px;
+      text-align: left;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 12px;
+      border: none;
+      font-size: 14px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      background: #ffffff;
+      color: #7fa3a6;
+      font-weight: bold;
+      margin-top: 18px;
+      cursor: pointer;
+    }
+    footer {
+      font-size: 13px;
+      margin-top: 24px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Image du faire-part -->
+    <img src="fairepart.jpeg" alt="Faire-part baptême Margot" class="header-image" />
+    <p style="letter-spacing:1px">SAVE THE DATE</p>
+    <p>Carole & Simon</p>
+
+    <div class="circle">
+      <h1>MARGOT</h1>
+      <p><em>Baptême</em></p>
+      <p><strong>Samedi 18 juillet 2026</strong></p>
+    </div>
+
+    <div class="card">
+      <h2>Programme</h2>
+      <p>
+        Le baptême de <strong>Margot</strong> aura lieu le <strong>samedi 18 juillet</strong><br />
+        à la <strong>Basilique de Paray-le-Monial</strong>.<br /><br />
+        Le programme se poursuivra par un <strong>déjeuner champêtre</strong><br />
+        chez Dominique.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>RSVP</h2>
+      <form action="mailto:slopez181191@gmail.com" method="post" enctype="text/plain">
+        <label>Nom et prénom</label>
+        <input type="text" name="Nom" required />
+
+        <label>Présence</label>
+        <select name="Présence">
+          <option value="Oui">Oui, avec plaisir</option>
+          <option value="Non">Non, malheureusement</option>
+        </select>
+
+        <label>Nombre d'adultes</label>
+        <input type="number" name="Adultes" min="0" />
+
+        <label>Nombre d'enfants</label>
+        <input type="number" name="Enfants" min="0" />
+
+        <label>Message</label>
+        <textarea name="Message"></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+
+    <footer>
+      Merci de nous répondre avant le 1er juin 2026 🤍
+    </footer>
+  </div>
+</body>
+</html>
